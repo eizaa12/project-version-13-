@@ -1,0 +1,149 @@
+:root {
+    --text-color: #000000;
+    --main-color: #54a4c4;
+    --accent-color: #ff9900;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: var(--text-color);
+}
+
+.admin-nav {
+    background-color: var(--main-color);
+    padding: 1em;
+}
+
+.admin-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-nav ul li {
+    margin: 0;
+}
+
+.admin-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.admin-nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.admin-dashboard {
+    padding: 2em;
+    background-color: white;
+    margin: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-info h1 {
+    color: var(--main-color);
+}
+
+.quick-stats {
+    background-color: #e0f7fa;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.quick-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-stats ul li {
+    margin: 0.5em 0;
+}
+
+.manage-products .heading span,
+.view-orders .heading span,
+.manage-users .heading span,
+.settings .heading span,
+.reports .heading span {
+    color: var(--main-color);
+    font-size: 1.2em;
+}
+
+.manage-products .heading h2,
+.view-orders .heading h2,
+.manage-users .heading h2,
+.settings .heading h2,
+.reports .heading h2 {
+    color: var(--accent-color);
+    font-size: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table th, table td {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--main-color);
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+input[type="search"], input[type="password"], input[type="email"] {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-product-btn {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form button {
+    width: fit-content;
+}

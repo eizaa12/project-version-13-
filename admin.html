@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Havenly Home</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <nav class="admin-nav">
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#products">Manage Products</a></li>
+            <li><a href="#orders">View Orders</a></li>
+            <li><a href="#users">Manage Users</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+
+    <section class="admin-dashboard" id="dashboard">
+        <div class="dashboard-info">
+            <h1>Welcome, Admin</h1>
+            <p>Here you can manage your e-commerce platform effectively and efficiently.</p>
+        </div>
+        <div class="quick-stats">
+            <h3>Quick Stats</h3>
+            <ul>
+                <li><strong>Products:</strong> 120</li>
+                <li><strong>Orders:</strong> 350</li>
+                <li><strong>Users:</strong> 200</li>
+                <li><strong>Revenue:</strong> $25,000</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="manage-products" id="products">
+        <div class="heading">
+            <span>Manage</span>
+            <h2>Products</h2>
+        </div>
+        <button class="add-product-btn" onclick="window.location.href='add-product.html'">Add New Product</button>
+        <input type="search" placeholder="Search Products..." style="margin-left: 10px; padding: 0.5em;">
+
+        <table class="product-list">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>001</td><td>Blue Sofa</td><td>$120</td><td>50</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>002</td><td>Red Armchair</td><td>$90</td><td>30</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>003</td><td>Dining Table</td><td>$200</td><td>20</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>004</td><td>Wooden Bed</td><td>$350</td><td>15</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>005</td><td>Office Desk</td><td>$150</td><td>25</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>006</td><td>Bookshelf</td><td>$80</td><td>40</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>007</td><td>TV Stand</td><td>$110</td><td>35</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>008</td><td>Leather Recliner</td><td>$250</td><td>10</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>009</td><td>Coffee Table</td><td>$70</td><td>60</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>010</td><td>Nightstand</td><td>$50</td><td>45</td><td><button>Edit</button><button>Delete</button></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="view-orders" id="orders">
+        <div class="heading">
+            <span>Manage</span>
+            <h2>Orders</h2>
+        </div>
+        <table class="orders-list">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>#001</td><td>John Doe</td><td>Shipped</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#002</td><td>Jane Smith</td><td>Processing</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#003</td><td>Mike Brown</td><td>Delivered</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#004</td><td>Emily White</td><td>Cancelled</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#005</td><td>Chris Green</td><td>Shipped</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#006</td><td>Sarah Blue</td><td>Processing</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#007</td><td>Paul Black</td><td>Delivered</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#008</td><td>Nancy Red</td><td>Shipped</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#009</td><td>Steve Gray</td><td>Processing</td><td><button>View</button><button>Update Status</button></td></tr>
+                <tr><td>#010</td><td>Anna Pink</td><td>Delivered</td><td><button>View</button><button>Update Status</button></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="manage-users" id="users">
+        <div class="heading">
+            <span>Manage</span>
+            <h2>Users</h2>
+        </div>
+        <table class="users-list">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>U001</td><td>John Doe</td><td>john@example.com</td><td>Customer</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U002</td><td>Jane Smith</td><td>jane@example.com</td><td>Admin</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U003</td><td>Mike Brown</td><td>mike@example.com</td><td>Supplier</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U004</td><td>Emily White</td><td>emily@example.com</td><td>Customer</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U005</td><td>Chris Green</td><td>chris@example.com</td><td>Admin</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U006</td><td>Sarah Blue</td><td>sarah@example.com</td><td>Supplier</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U007</td><td>Paul Black</td><td>paul@example.com</td><td>Customer</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U008</td><td>Nancy Red</td><td>nancy@example.com</td><td>Admin</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U009</td><td>Steve Gray</td><td>steve@example.com</td><td>Supplier</td><td><button>Edit</button><button>Delete</button></td></tr>
+                <tr><td>U010</td><td>Anna Pink</td><td>anna@example.com</td><td>Customer</td><td><button>Edit</button><button>Delete</button></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="settings" id="settings">
+        <div class="heading">
+            <span>Account</span>
+            <h2>Settings</h2>
+        </div>
+        <form action="#" method="post">
+            <label for="change-password">Change Password</label>
+            <input type="password" id="change-password" name="password" placeholder="Enter new password" required>
+
+            <label for="update-email">Update Email</label>
+            <input type="email" id="update-email" name="email" placeholder="Enter new email" required>
+
+            <button type="submit">Update</button>
+        </form>
+    </section>
+
+    <section class="reports" id="reports">
+        <div class="heading">
+            <span>Analyze</span>
+            <h2>Reports</h2>
+        </div>
+        <p>View and download detailed reports about products, sales, and users.</p>
+        <button onclick="alert('Reports feature coming soon!')">Generate Report</button>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Havenly Home. All rights reserved.</p>
+    </div>
+</body>
+</html>

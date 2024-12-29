@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supplier Dashboard - Havenly Home</title>
+    <link rel="stylesheet" href="supplier.css">
+</head>
+<body>
+
+    <!-- Supplier Navigation Bar -->
+    <nav class="admin-nav">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Manage Products</a></li>
+            <li><a href="#">View Orders</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Supplier Dashboard -->
+    <div class="admin-dashboard">
+        <div class="dashboard-info">
+            <h1>Welcome, Supplier</h1>
+            <p>Manage your products, view orders, and update your settings here.</p>
+        </div>
+
+        <!-- Quick Stats Section -->
+        <div class="quick-stats">
+            <h2>Quick Stats</h2>
+            <ul>
+                <li>Total Products: 15</li>
+                <li>Pending Orders: 5</li>
+                <li>Completed Orders: 25</li>
+            </ul>
+        </div>
+
+        <!-- Manage Products Section -->
+        <div class="manage-products">
+            <div class="heading">
+                <h2><span>Manage Products</span></h2>
+            </div>
+            <p>Here you can add, update, or remove products from your catalog.</p>
+            <button class="add-product-btn">Add New Product</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>$100</td>
+                        <td>10</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>$150</td>
+                        <td>5</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <!-- Add more products here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- View Orders Section -->
+        <div class="view-orders">
+            <div class="heading">
+                <h2><span>View Orders</span></h2>
+            </div>
+            <p>View and manage orders placed by customers.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Order 001</td>
+                        <td>John Doe</td>
+                        <td>Product 1</td>
+                        <td>Pending</td>
+                        <td><button>View</button> <button>Mark as Shipped</button></td>
+                    </tr>
+                    <tr>
+                        <td>Order 002</td>
+                        <td>Jane Smith</td>
+                        <td>Product 2</td>
+                        <td>Shipped</td>
+                        <td><button>View</button> <button>Mark as Delivered</button></td>
+                    </tr>
+                    <!-- Add more orders here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Settings Section -->
+        <div class="settings">
+            <div class="heading">
+                <h2><span>Settings</span></h2>
+            </div>
+            <p>Update your profile and account settings here.</p>
+            <form>
+                <label for="supplier-name">Name:</label>
+                <input type="text" id="supplier-name" name="supplier-name" value="Supplier Name">
+                
+                <label for="supplier-email">Email:</label>
+                <input type="email" id="supplier-email" name="supplier-email" value="supplier@example.com">
+                
+                <label for="supplier-password">Password:</label>
+                <input type="password" id="supplier-password" name="supplier-password" value="password">
+                
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Havenly Home. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>
